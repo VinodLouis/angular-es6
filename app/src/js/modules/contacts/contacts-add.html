@@ -1,0 +1,24 @@
+<div class="panel container margin-top">
+    <div class="panel-heading text-center">
+        <h3>Add a Contact </h3>
+        <p> <h4 ng-click="addContactController.gotolist()" class="text-info">Go To Contact List</h4></p>
+    </div>
+    <div class="panel-body">
+        <div class="text-center text-danger" ng-if="addContactController.error">
+            <h5>Please Enter Valid Data</h5>
+        </div>
+        <div>
+            <label>Name</label><br/>
+            <input type="text" class="form-control" ng-model="addContactController.objContact.name"/>
+        </div><br/>
+        <div>
+            <label>Address</label><br/>
+            <input type="text" class="form-control" ng-model="addContactController.objContact.address"/>
+        </div>
+    </div>
+    <div class="text-right">
+        <input type="button" class="btn btn-success" value="Save" ng-click="addContactController.addContact(false)"/>
+        <input type="button" class="btn btn-primary" value="Save & Add More" ng-click="addContactController.addContact(true)"/>
+        <input type="button" class="btn btn-default" value="Cancel" ng-click="addContactController.discardContact()"/>
+    </div>
+</div>

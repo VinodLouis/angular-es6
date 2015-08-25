@@ -1,0 +1,26 @@
+<div class="panel container margin-top">
+    <div class="panel-heading text-center"><h3>Contact List</h3></div>
+    <table cellpadding="2" cellspacing="1"  border="1" width="100%">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr ng-repeat="eachContact in manageContactController.arrContactData">
+            <td>{{$index + 1}}</td>
+            <td>{{eachContact.name}}</td>
+            <td>{{eachContact.address}}</td>
+            <td><span class="text-warning" ng-click="manageContactController.editData(eachContact.id)">Edit</span></td>
+            <td><span class="text-danger" ng-click="manageContactController.deleteData(eachContact)">Delete</span></td>
+        </tr>
+        <tr ng-if="manageContactController.arrContactData.length == 0">
+            <td colspan="5"> No Contacts Data Available, Please Add Contacts</td>
+        </tr>
+    </table>
+    <br/>
+    <div class="text-right">
+        <input type="button" class="btn btn-info" value="Add More Contacts" ng-click="manageContactController.addContact()"/>
+    </div>
+</div>

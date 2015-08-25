@@ -1,0 +1,10 @@
+@import "./variables";
+
+
+.panel{
+  padding: 15px;
+  border: 1px solid #666666;
+  .panel-heading,.panel-footer-custom{
+    background: #fafafa;
+  }
+}

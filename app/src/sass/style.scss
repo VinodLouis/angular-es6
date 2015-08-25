@@ -1,0 +1,12 @@
+@import "./variables";
+//@import "./mixins";
+//@import "./bootstrap-override";
+
+.margin-top{
+  margin-top:15px;
+}
+
+td,th{
+  padding: 5px;
+  text-align: center;
+}
