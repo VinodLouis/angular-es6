@@ -18,7 +18,7 @@ Small Demo of how to use angular Js with ES6
 
 
 ### Running the Application for production
-* The concept here is to get all teh files in single build i.e in app/dist/js/build-js.js
+* The concept here is to get all the files in single build i.e in app/dist/js/build-js.js
 
-1. From root folder run ```npm run webpack-dev``` This will unify all code into common build
+1. From root folder run ```npm run webpack-dev``` This will unify all code into common build [ This will uglify all the javascript and html code into a single file build-js ]
 2. Now you can run the index.html independently without the src reference
